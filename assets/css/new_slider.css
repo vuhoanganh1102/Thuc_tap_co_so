@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#slider{
+    background-image: url('/assets/img/slider/background.png');
+    width: 100%;
+    height: 449px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#slider .slider_content{
+    
+    width: 980px;
+    height: 448px;
+    overflow: hidden;
+}
+#slider .slider_content .slider_bg{
+    position: relative;
+    width: 500%;
+    height: 448px;
+    display: flex;
+    flex-direction: row;
+}
+#slider input{
+    display: none;
+}
+.slider_img{
+    width: 20%;
+    transition: 2s;
+    margin: 0;
+}
+.slider_img img{
+   width: 980px;
+   height: 448px;
+}
+.navigation-manual{
+    position: absolute;
+    width:980px;
+    justify-content: center;
+    bottom: 0;
+    display: flex;
+}
+.manual-btn{
+    background-color: aliceblue;
+    border:2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.manual-btn:hover{
+    background-color: black;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+/* Css auto slider */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    justify-content: center;
+    bottom: 0;
+}
+.navigation-auto div{
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    transition:1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right:20px ;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    
+}
