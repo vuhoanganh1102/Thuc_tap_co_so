@@ -1,0 +1,29 @@
+#footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#footer .brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px 0;
+}
+#footer .content-cgv-policy{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#footer .content-cgv-policy li{
+    list-style-type: none;
+    
+}
+#footer .content-cgv-policy li a{
+    text-decoration: none;
+    color: #000;
+}

@@ -147,3 +147,31 @@
     right:0px;
 }
 
+#content .film-news{
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#content .box1,.box3{
+    width: 228px;
+    height: 261px;
+    display: flex;
+    border: 2px solid black;
+    margin: 36px 0;
+    justify-content: center;
+    align-items: center;
+}
+#content .box2{
+    height: 280px;
+    width: 510px;
+    display: flex;
+    border: 2px solid black;
+    margin: 36px 0;
+    justify-content: center;
+    align-items: center;
+    margin: 36px 2px;
+}
